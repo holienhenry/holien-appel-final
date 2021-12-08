@@ -370,7 +370,7 @@ figure {
 }
 
 body {
-  background-color: #FFFAF2;
+  background-color: #FFF;
 }
 
 ul {
@@ -468,10 +468,29 @@ header > div {
     Footer
 ============= */
 #preloader {
-  position: fixed;
-  height: 100vh;
-  width: 100%;
-  z-index: 1000;
+  display: grid;
+  grid-template-columns: auto 90% auto;
+  grid-template-areas: ". content .";
+  padding: 64px 0;
+}
+@media (min-width: 768px) {
+  #preloader {
+    padding: 100px 0;
+    grid-template-columns: auto 80% auto;
+  }
+}
+@media (min-width: 1024px) {
+  #preloader {
+    padding: 128px 0;
+  }
+}
+@media (min-width: 1440px) {
+  #preloader {
+    grid-template-columns: auto 60% auto;
+  }
+}
+#preloader > div {
+  grid-area: content;
 }
 #hero {
   height: 90vh;

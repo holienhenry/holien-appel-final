@@ -1,11 +1,27 @@
 #preloader{
 
-    position: fixed;
-    height: 100vh;
-    width: 100%;
-    z-index: 1000;
+    display: grid;
+    grid-template-columns: auto 90% auto;
+    grid-template-areas: ". content .";
+    padding: 64px 0;
+
+    @include md{
+        padding: 100px 0;
+        grid-template-columns: auto 80% auto;
+    }
+
+    @include lg{
+        padding: 128px 0;
+    }
+
+    @include xl{
+        grid-template-columns: auto 60% auto;
+    }
+
 
     >div{
+
+        grid-area: content;
 
         svg{
 

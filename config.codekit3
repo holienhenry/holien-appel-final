@@ -7,7 +7,7 @@
       "uuidString" : "3C1A4819-006F-478C-A0EB-3E28D7D8849C"
     }
   ],
-  "creatorBuild" : "34214",
+  "creatorBuild" : "34264",
   "files" : {
     "\/.gitattributes" : {
       "cB" : 0,
@@ -439,7 +439,7 @@
   },
   "projectAttributes" : {
     "creationDate" : 654900616.84123194,
-    "displayValue" : "holien-appel",
+    "displayValue" : "holien-appel-final",
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "brackets_orange",
     "iconImageWasSetByUser" : 0
@@ -1589,6 +1589,9 @@
       },
       "no-unused-labels" : {
         "active" : 1
+      },
+      "no-unused-private-class-members" : {
+        "active" : 0
       },
       "no-unused-vars" : {
         "active" : 1,
